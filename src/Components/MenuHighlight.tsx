@@ -10,7 +10,7 @@ interface Props {
 const MenuHighlight: React.FC<Props> = (props) => {
   return (
     <>
-      <div className="md:relative md:flex-row flex flex-col mb-6">
+      <li className="md:relative md:flex-row flex flex-col mb-6">
         {/* brown line */}
         <div className="hidden md:block absolute top-4 bg-primary-beaver h-01 w-1/4"></div>
         <img
@@ -23,7 +23,7 @@ const MenuHighlight: React.FC<Props> = (props) => {
           <h3 className="mb-3 text-base">{props.title}</h3>
           <p className="md:text-left md:text-base w-5/6">{props.desc}</p>
         </div>
-      </div>
+      </li>
     </>
   );
 };

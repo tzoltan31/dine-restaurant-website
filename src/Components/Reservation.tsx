@@ -20,7 +20,7 @@ export const Reservation: React.FC = () => {
   } = useForm();
 
   return (
-    <section className="text-center select-none mb-40">
+    <div className="text-center select-none mb-40">
       <Header
         addpadding={false}
         bgimg="reserve-bg"
@@ -29,7 +29,7 @@ export const Reservation: React.FC = () => {
         h2="Reservations"
         text="We can't wait to host you. If you have any special requirements please feel free to call on the phone number below. We'll be happy to accommodate you."
       ></Header>
-      <div className="mx-6 select-none">
+      <main className="mx-6 select-none">
         <div className="lg:h-36 md:h-80 h-96 relative">
           <div className="-z-10 rounded-br-large -top-2 -left-96 absolute hidden lg:block bg-gray-200 w-full h-80"></div>
           <form className="xl:w-5/12 xl:right-32 lg:right-14 lg:-top-80 lg:w-6/12 lg:mx-0 md:mx-24 -top-24 mx absolute shadow-2xl py-4 px-7 bg-white">
@@ -291,7 +291,7 @@ export const Reservation: React.FC = () => {
           </form>
           )
         </div>
-      </div>
-    </section>
+      </main>
+    </div>
   );
 };

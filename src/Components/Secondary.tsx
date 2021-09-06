@@ -17,7 +17,7 @@ const Secondary: React.FC = () => {
         </p>
       </div>
       {/* pics + title/desc container */}
-      <div className="lg:pt-16 lg:ml-20 lg:w-2/3 flex flex-col">
+      <ul className="lg:pt-16 lg:ml-20 lg:w-2/3 flex flex-col">
         <MenuHighlight
           title="Seared Salmon Fillet"
           alt="salmon"
@@ -38,7 +38,7 @@ const Secondary: React.FC = () => {
           pics="/images/homepage/chocolate-mobile.jpg"
           desc="Creamy mousse combined with summer fruits and dark chocolate shavings."
         ></MenuHighlight>
-      </div>
+      </ul>
     </section>
   );
 };
