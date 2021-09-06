@@ -7,6 +7,20 @@ import { Occasion } from "./Components/Occasion";
 import { Footer } from "./Components/Footer";
 import { Reservation } from "./Components/Reservation";
 
+/* For tailwind class scraping
+
+        hero-bg-mobile
+        ready-bg-mobile
+        hero-bg-tablet
+        ready-bg-tablet
+        hero-bg-desktop
+        ready-bg-desktop
+        reserve-bg-mobile
+        reserve-bg-mobile@2x
+        reserve-bg-tablet
+        reserve-bg-desktop
+*/
+
 function App() {
   const [isBooking, setIsBooking] = useState(false);
 
