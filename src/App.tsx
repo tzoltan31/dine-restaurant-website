@@ -1,25 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Secondary from "./Components/Secondary";
+import { Occasion } from "./Components/Occasion";
+import { Footer } from "./Components/Footer";
+import { Reservation } from "./Components/Reservation";
 
 function App() {
+  const [isBooking, setIsBooking] = useState(false);
+
+  const book = () => {
+    setIsBooking(true);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!isBooking ? (
+        <div className="App font-spartan text-lg leading-8 select-none">
+          <Header
+            addpadding={true}
+            bgimg="hero-bg"
+            button={true}
+            book={book}
+            text="Experience our seasonal menu in beautiful country surroundings. Eat
+          the freshest produce from the comfort of our farmhouse."
+            title="dine"
+            h2="Exquisite dining since 1989"
+          ></Header>
+          <Main></Main>
+          <Secondary></Secondary>
+          <Occasion book={book}></Occasion>
+          <div className="xl:px-40 lg:px-32 lg:text-left lg:justify-between lg:items-center lg:py-20 lg:p-0 lg:flex-row lg:bg-ready-bg-desktop md:bg-ready-bg-tablet pt-20 bg-center bg-cover bg-ready-bg-mobile text-center flex flex-col px-6">
+            <h2 className="text-white">Ready to make a reservation?</h2>
+            <div className="flex justify-center items-center">
+              <button
+                onClick={book}
+                className="hover:bg-white hover:text-primary-black lg:flex-shrink-0 lg:m-0 md:mx-0 mb-20 mt-7 mx-8 py-4 px-12 bg-transparent cursor-pointer text-white uppercase border text-base font-semibold tracking-widest"
+              >
+                book a table
+              </button>
+            </div>
+          </div>
+          <Footer></Footer>
+        </div>
+      ) : (
+        <>
+          <Reservation></Reservation>
+          <Footer></Footer>
+        </>
+      )}
+    </>
   );
 }
 
