@@ -1,5 +1,19 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: {
+    content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    safelist: [
+      "hero-bg-mobile",
+      "ready-bg-mobile",
+      "hero-bg-tablet",
+      "ready-bg-tablet",
+      "hero-bg-desktop",
+      "ready-bg-desktop",
+      "reserve-bg-mobile",
+      "reserve-bg-mobile@2x",
+      "reserve-bg-tablet",
+      "reserve-bg-desktop",
+    ],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
