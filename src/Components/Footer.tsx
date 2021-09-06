@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
         <div className="lg:mb-0 mb-6">
           <p className="lg:text-sm">marthwaite, sedbergh</p>
           <p className="lg:text-sm">cumbria</p>
-          <a href="tel:+00 44 123 4567">
+          <a href="tel:00-44-123-4567">
             <p className="lg:text-sm">+00 44 123 4567</p>
           </a>
         </div>
