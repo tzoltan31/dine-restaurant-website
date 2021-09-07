@@ -67,8 +67,8 @@ export const validate = (data: Data) => {
   if (!data.pmOrAm) {
     errors.pmOrAm = "error";
   }
-  //   check if there are any time errors
 
+  //   check if there are any time errors
   if ((!data.hour || data.hour < 9) && data.pmOrAm?.toUpperCase() === "AM") {
     errors.time = "Invalid time";
   }
@@ -95,12 +95,6 @@ const useForm = () => {
   const [count, setCount] = useState(2);
   const [errors, setErrors] = useState<Errors>({ initial: "first render" });
   const [formIsValid, setFormIsValid] = useState(false);
-
-  // useEffect(() => {
-  //   console.log(data);
-  //   console.log(errors);
-  //   console.log(formIsValid);
-  // });
 
   useEffect(() => {
     setFormIsValid(Object.keys(errors).length === 0);

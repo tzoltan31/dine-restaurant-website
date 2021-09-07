@@ -4,9 +4,9 @@ import MenuHighlight from "./MenuHighlight";
 
 const Secondary: React.FC = () => {
   return (
-    <section className="xl:px-40 lg:pt-48 lg:px-32 lg:flex-row lg:-mt-20 md:pb-14 md:px-24 md:pt-20 bg-primary-black text-white flex flex-col px-6 text-center pt-12">
-      {/* headin + p */}
-      <div className="lg:w-1/3 lg:text-left mb-14">
+    <section className="xl:px-40 lg:pt-48 lg:pl-32 lg:flex-row lg:-mt-20 md:pb-14 md:px-24 md:pt-20 bg-primary-black text-white flex flex-col px-6 text-center pt-12">
+      {/* heading + p */}
+      <div className="lg:w-1/2 lg:text-left mb-14">
         <PatternDivide></PatternDivide>
         <h2 className="lg:mx-0 md:mx-24 pt-4 mb-5">
           A few highlights from our menu
@@ -17,7 +17,7 @@ const Secondary: React.FC = () => {
         </p>
       </div>
       {/* pics + title/desc container */}
-      <ul className="lg:pt-16 lg:ml-20 lg:w-2/3 flex flex-col">
+      <section className="lg:pt-16 lg:ml-20 lg:w-2/3 flex flex-col">
         <MenuHighlight
           title="Seared Salmon Fillet"
           alt="salmon"
@@ -38,7 +38,7 @@ const Secondary: React.FC = () => {
           pics="/images/homepage/chocolate-mobile.jpg"
           desc="Creamy mousse combined with summer fruits and dark chocolate shavings."
         ></MenuHighlight>
-      </ul>
+      </section>
     </section>
   );
 };

@@ -34,42 +34,41 @@
     @apply text-sm;
     @apply leading-6;
   }
+
+  /* minwidth 768px rules */
   @screen md {
     p {
       @apply text-lg;
     }
-  }
-  @screen md {
     h2 {
       @apply text-4xl;
       @apply leading-normal;
     }
   }
+  /* minwidth 1024px rules */
   @screen lg {
     h2 {
       @apply text-4xl;
       @apply leading-tight;
     }
-  }
 
-  @screen lg {
     h1 {
       @apply text-5xl;
       @apply leading-tight;
     }
   }
-
+  /* minwidth 1280px rules */
   @screen xl {
     h1 {
       @apply text-6xl;
       @apply leading-tight;
     }
-  }
-
-  @screen xl {
     h2 {
       @apply text-45xl;
       @apply leading-tight;
+    }
+    h3 {
+      @apply text-lg;
     }
   }
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "./Header";
-// import { useState, useEffect } from "react";
 import useForm from "./useForm";
-// import { validate } from "./validate";
 
 export const Reservation: React.FC = () => {
   const {
