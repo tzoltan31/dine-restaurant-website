@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import useForm from "./useForm";
 
-export const Reservation: React.FC = () => {
+export const Reservation: React.FC = (): JSX.Element => {
   const {
     data,
     count,

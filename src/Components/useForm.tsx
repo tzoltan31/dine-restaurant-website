@@ -25,7 +25,7 @@ type Errors = {
   initial?: string;
 };
 
-export const validate = (data: Data) => {
+export const validate = (data: Data): Errors => {
   let errors: Errors = {};
   if (!data.name) {
     errors.name = "This field is required";

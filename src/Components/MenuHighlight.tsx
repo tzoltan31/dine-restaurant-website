@@ -7,7 +7,7 @@ interface Props {
   alt: string;
 }
 
-const MenuHighlight: React.FC<Props> = (props) => {
+const MenuHighlight: React.FC<Props> = (props): JSX.Element => {
   return (
     <div className="md:flex-shrink-0 md:relative md:flex-row flex flex-col mb-6">
       {/* brown line */}

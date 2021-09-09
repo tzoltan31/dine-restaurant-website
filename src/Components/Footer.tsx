@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Footer: React.FC = () => {
+export const Footer: React.FC = (): JSX.Element => {
   return (
     <footer className="xl:px-40 xl:pr-72 xl:py-6 lg:px-32 lg:pr-40 lg:pt-0 lg:items-center md:pt-14 md:text-left md:flex-row flex flex-col text-center bg-primary-black text-white select-none">
       <h2 className="lg:text-left lg:m-0 lg:p-0 md:pl-8 md:m-0 md:w-1/3 mt-20 mb-6">

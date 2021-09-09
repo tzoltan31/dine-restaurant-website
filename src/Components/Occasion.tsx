@@ -6,7 +6,7 @@ interface Props {
   book: () => void;
 }
 
-export const Occasion: React.FC<Props> = (props) => {
+export const Occasion: React.FC<Props> = (props): JSX.Element => {
   const [selected, setSelected] = useState(0);
   const { width } = useWindowDimensions();
 

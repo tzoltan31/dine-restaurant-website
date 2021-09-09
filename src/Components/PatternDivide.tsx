@@ -1,6 +1,6 @@
 import React from "react";
 
-const PatternDivide: React.FC = () => {
+const PatternDivide: React.FC = (): JSX.Element => {
   return (
     <svg
       className="lg:mx-0 mx-auto my-2 mb-6"

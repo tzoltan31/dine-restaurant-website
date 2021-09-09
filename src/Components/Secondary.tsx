@@ -2,7 +2,7 @@ import React from "react";
 import PatternDivide from "./PatternDivide";
 import MenuHighlight from "./MenuHighlight";
 
-const Secondary: React.FC = () => {
+const Secondary: React.FC = (): JSX.Element => {
   return (
     <section className="xl:px-40 lg:pt-48 lg:pl-32 lg:flex-row lg:-mt-20 md:pb-14 md:px-24 md:pt-20 bg-primary-black text-white flex flex-col px-6 text-center pt-12">
       {/* heading + p */}
